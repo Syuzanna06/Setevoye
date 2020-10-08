@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>MILO.DETI</title>
+    </head>
+    <body>
+    <h1>Меню</h1>
+        <hr>
+        <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="cont.html">Контакты</a></li></ul>
+        <hr>
+        <h1>Напишите нам</h1>
+        <form action="registration.php">
+    <p><label for="name">Имя</label>
+    <input type="text" id="name"></p>
+    <p><label for="pass">Пароль</label>
+    <input type="password" id="pass"></p>
+    <p><label for="email">E-mail</label>
+            <input type="email" id="email"></p>
+    <p><label for="pol">Пол</label>
+    <select name="pol" id="pol">
+        <option value="">Указать</option>
+        <option value="1">Мужской</option>
+        <option value="2">Женский</option>
+    </select>
+    </p>
+    <p><input type="submit" value="Регистрация"></p>
+</form>
+        <hr>
+        <h1>Адрес</h1>
+        <p>Телефон: <a href="tel:+79538746387">+7(953)874-63-87</a></p>
+        <p>Эл.почта: <a href="mailto:genipx@mail.ru">genipx@mail.ru</a></p>
+        <p>Адрес: г.Тула, ул.Смидович, 14</p>
+        <div id="map" style="width:400px;height:400px"></div>
+            <script>function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(54.164996, 37.582652),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}</script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
